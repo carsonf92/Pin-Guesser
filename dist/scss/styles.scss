@@ -1,0 +1,146 @@
+// Colors
+$purple: #575DBF;
+$black: #121727;
+$white: #FEFEFE;
+
+// Font
+$sans-serif: 'Roboto', 'Helvetica', sans-serif;;
+
+// Layout
+body {
+	align-items: center;
+	background: $black;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+h1 {
+	color: $white;
+	font-family: $sans-serif;
+	font-weight: bold;
+	margin-top: -64px;
+}
+
+p {
+	color: $white;
+	font-family: $sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 32px;
+}
+
+.container {
+	text-align: center;
+	width: 320px;
+}
+
+.input {
+	position: relative;
+	
+	.fa-lock {
+		color: $black;
+		position: absolute;
+		top: 50%;
+		left: 16px;
+		transform: translate(0, -50%);
+	}
+}
+
+input {
+	background: $white;
+	border: none;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: $purple;
+	font-size: 24px;
+	letter-spacing: 2px;
+	padding: 8px 16px 8px 40px;
+	width: 320px;
+}
+
+.button {
+	background: $purple;
+	border: 2px solid $purple;
+	border-radius: 8px;
+	color: $white;
+	cursor: pointer;
+	font: normal 20px $sans-serif;
+	margin-top: 16px;
+	padding: 8px 16px;
+	position: relative;
+	
+	&:hover, &:focus {
+		background: darken($purple, 10%);
+		border-color: darken($purple, 10%);
+	}
+	
+	&.disabled {
+		background: none;
+		border-color: $purple;
+		color: $purple;
+		pointer-events: none;
+	}
+	
+	&:active {
+		color: transparent;
+		
+		.loader {
+			opacity: 1;
+		}
+	}
+	
+	.loader {
+		margin-top: -4px;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		&.active {
+			opacity: 1;
+		}
+		
+		span {
+			background: $white;
+			display: inline-block;
+			height: 4px;
+			margin: 0 2px;
+			width: 4px;
+		}
+	}
+}
+
+.result {
+	border: 2px solid $purple;
+	border-radius: 8px;
+	color: $white;
+	margin-top: 16px;
+	padding: 16px;
+	
+	code {
+		display: block;
+		text-align: left;
+		
+		span {
+			float: right;
+			text-align: right;
+		}
+	}
+}
+
+footer {
+	color: $white;
+	font: normal 16px $sans-serif;
+	position: absolute;
+	bottom: 24px;
+	
+	a {
+		color: $purple;
+		
+		&:hover {
+			color: $white;
+		}
+	}
+}

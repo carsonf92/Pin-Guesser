@@ -1,0 +1,140 @@
+body {
+  align-items: center;
+  background: #121727;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  color: #FEFEFE;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: bold;
+  margin-top: -64px;
+}
+
+p {
+  color: #FEFEFE;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.container {
+  text-align: center;
+  width: 320px;
+}
+
+.input {
+  position: relative;
+}
+
+.input .fa-lock {
+  color: #121727;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+input {
+  background: #FEFEFE;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #575DBF;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 8px 16px 8px 40px;
+  width: 320px;
+}
+
+.button {
+  background: #575DBF;
+  border: 2px solid #575DBF;
+  border-radius: 8px;
+  color: #FEFEFE;
+  cursor: pointer;
+  font: normal 20px "Roboto", "Helvetica", sans-serif;
+  margin-top: 16px;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.button:hover, .button:focus {
+  background: #3f44a4;
+  border-color: #3f44a4;
+}
+
+.button.disabled {
+  background: none;
+  border-color: #575DBF;
+  color: #575DBF;
+  pointer-events: none;
+}
+
+.button:active {
+  color: transparent;
+}
+
+.button:active .loader {
+  opacity: 1;
+}
+
+.button .loader {
+  margin-top: -4px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.button .loader.active {
+  opacity: 1;
+}
+
+.button .loader span {
+  background: #FEFEFE;
+  display: inline-block;
+  height: 4px;
+  margin: 0 2px;
+  width: 4px;
+}
+
+.result {
+  border: 2px solid #575DBF;
+  border-radius: 8px;
+  color: #FEFEFE;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.result code {
+  display: block;
+  text-align: left;
+}
+
+.result code span {
+  float: right;
+  text-align: right;
+}
+
+footer {
+  color: #FEFEFE;
+  font: normal 16px "Roboto", "Helvetica", sans-serif;
+  position: absolute;
+  bottom: 24px;
+}
+
+footer a {
+  color: #575DBF;
+}
+
+footer a:hover {
+  color: #FEFEFE;
+}
+

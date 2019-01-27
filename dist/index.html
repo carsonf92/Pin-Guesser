@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Pin Breaker</title>
+	<meta name="description" content="A demonstration of a brute-force attack to determine a pin number.">
+	<meta name="author" content="Carson Ford">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<h1>Pin Breaker</h1>
+		<p>Enter a numeric pin up to 8 digits in length and see how long it takes to crack using a brute-force attack!</p>
+		<div class="input">
+			<i class="fa fa-lock"></i>
+			<input id="pin-input" type="password" maxlength="8">
+		</div>
+		<div class="button disabled">Crack Pin
+			<div class="loader">
+				<span></span>
+				<span></span>
+				<span></span>	
+			</div>
+		</div>
+		<div class="result">
+			<code>Pin number: <span id="pin">-</span></code><br>
+			<code>Time elapsed: <span id="time">00:00:00.0</span></code>
+		</div>
+	</div>
+
+	<footer>View project on <a href="https://github.com/carsonf92/Pin-Guesser" title="Pin Guesser Repository" target="_blank">Github</a></footer>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
