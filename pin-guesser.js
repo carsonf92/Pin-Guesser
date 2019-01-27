@@ -1,8 +1,4 @@
-// A brute-force algorithm that can determine a numeric pin of base-10 digits with a known length
-// Demonstrated with the help of a randomly generated pin
-// Displays the time taken to guess the pin
-
-// Declare pin variable and initalize guess
+// Declare global variables
 var pin,
 	guess,
 	duration,
@@ -48,10 +44,10 @@ function msToTime(duration) {
 	return time;
 }
 
+// Demonstrate the algorithm with a 4 digit pin
 generatePin(4);
 guessPin(4);
 msToTime(duration);
 
-// Result
 console.log('Pin number: ' + pin);
 console.log('Time elapsed: ' + time);
